@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="History timeline and impact of Brunel">
+    <meta name="keywords" content="Brunel, Isambard Kingdom Brunel, timeline, history">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kerajaan Mataram Islam</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="heading">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="./assets/images/top_hat.png" alt="Top hat logo">
+                </a>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <!-- Set 'active' untuk Home -->
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="history.html">Sejarah Berdirinya</a></li>
+                    <li><a href="goldenage.html">Masa Kejayaan</a></li>
+                    <li><a href="decline.html">Perpecahan</a></li>
+                    <li><a href="figures.html">Tokoh-Tokoh Penting</a></li>
+                    <li><a href="legacy.html">Warisan Budaya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section id="hero-image">
+        <div id="hero-text">
+            <h1>Kerajaan Mataram Islam</h1>
+            <h2>Conan,Faris,Hapiz,Hisyam</h2>
+        </div>
+    </section>
+
+    <!-- Who Was Brunel Section -->
+    <section class="section-padding">
+        <h2>Apa itu Mataram Islam?</h2>
+        <p>
+            Mataram Islam adalah kerajaan yang berkembang di Pulau Jawa, Indonesia, pada abad ke-16 hingga abad ke-18 yang memainkan peran penting dalam penyebaran Islam di wilayah tersebut. Kerajaan ini dikenal sebagai salah satu kerajaan Islam terbesar dan paling berpengaruh di Indonesia pada masanya.
+        </p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos" class="section-padding">
+        <div class="youtube-video">
+            <iframe src="https://www.youtube.com/embed/n1GxYcqwkR4?si=QRivEtxqd2hkGL6B" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        <div class="youtube-video">
+            <iframe src="https://www.youtube.com/embed/E4mJOi2MRgQ?si=u28Jp8O109lP6m26" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-img-info section-padding">
+        <div class="info">
+            <h2>Author</h2>
+            <p>
+                Alvian Ainur Conan, Muhammad Faris Izzuddin, Nuril Abshor Hafizh, Hisyam Alwi Wahyudi.
+            </p>
+        </div>
+        <div class="info">
+            <h2>Exam</h2>
+            <p>
+                Digital Humanities.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footing">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6709d9064b.js" crossorigin="anonymous"></script>
+<script>
+    const currentLocation = window.location.pathname.split('/').pop();
+    const menuItems = document.querySelectorAll('#menu a');
+
+    menuItems.forEach(item => {
+        if (item.getAttribute('href') === currentLocation) {
+            item.classList.add('active');
+        }
+    });
+</script>
+</body>
+</html>
